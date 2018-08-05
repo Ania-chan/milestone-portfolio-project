@@ -1,0 +1,82 @@
+/*** BASE STYLES ***/
+ body {
+   font-family: 'Montserrat';
+   font-size: 16px;
+   color: #ffffff;
+   background-color: #1f202b;
+ }
+
+#work {
+  height: 1545px;;
+}
+
+.project {
+  height: 466px;
+}
+
+#about {
+  height: 550px;
+  clear: both;
+}
+
+#contact {
+  height: 450px;;
+}
+
+/*** GRID ***/
+
+.full-width {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.half-width {
+  width: 50%;
+  float: left;
+  padding: 42px 100px;
+}
+
+.third-width {
+  width: 33%;
+  float: left;
+}
+
+/*** HEADER ***/
+#navigation {
+  height: 74px;
+}
+
+.hero-section {
+  height: 800px;
+  background: url('../img/hero-background.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+header.full-width {
+  height: 72px;
+}
+
+h2 {
+  padding: 300px 0 260px 100px;
+  font-family: 'SourceCodePro';
+  font-size: 72px;
+  font-weight: 600;
+}
+
+nav {
+  float:right;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+}
+
+/*** PORTFOLIO ***/
+
+
+/*** ABOUT ***/
+
+
+/*** CONTACT ***/

@@ -4,7 +4,7 @@
         <title>Portfolio Milestone Project</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:600" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     </head>
 
@@ -13,28 +13,29 @@
 
       <div id="navigation" class="full-width">
           <div class="half-width">
-            <h3>anna nakayama | web developer</h3>
+            <h3 class="title">&lt;anna nakayama | web developer/&gt;</h3>
           </div>
           <div class="half-width">
             <nav>
               <ul>
-                <li><a href="#portfolio"></a>portfolio</li>
-                <li><a href="#about"></a>about</li>
-                <li><a href="#contact"></a>contact</li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
               </ul>
             </nav>
           </div>
         </div>
 
-        <div class="full-width hero-section">
-          <h2>let's <span>code</span> something cool</h2>
+        <div class="hero-section">
+          <h2>let's <span>code</span><br> something cool</h2>
         </div>
 
       </header>
 
       <main>
-        <h3>my portfolio</h3>
+
         <section id="portfolio">
+          <h3 class="heading">my portfolio</h3>
 
           <div class="project" id="rogue-pickings">
             <div class="full-width">
@@ -42,6 +43,8 @@
                 <img src="img/rogue-pickings-thumbnail.png" alt="Rogue Pickings Project">
               </div>
               <div class="half-width">
+                <h4>Rogue Pickings Website</h4>
+                <p>HTML & CSS from Photoshop Design Comp</p>
                 <p>This was a responsive website project created for Rogue Pickings. It has a different page layout for mobile, tablet and desktop. Design is very simple and minimalistic to match the restaurants concept.</p>
               </div>
             </div>
@@ -50,7 +53,9 @@
           <div class="project" id="jubilee">
             <div class="full-width">
               <div class="half-width">
-                <p>The first website I ever created. It's a simple portfolio landing page with simple and easy to customize design.</p>
+                <h4>Jubilee Austen Project</h4>
+                <p>HTML 5 & CSS Website</p>
+                <p>The first website I ever created. It's a simple portfolio landing page with easy to customize design. </p>
               </div>
               <div class="half-width">
                 <img src="img/jubilee-thumbnail.png" alt="Jubilee Austen Project">
@@ -64,6 +69,8 @@
                 <img src="img/holstee-thumbnail.png" alt="Holstee Manifesto">
               </div>
               <div class="half-width">
+                <h4>Holstee Manifesto</h4>
+                <p>HTML 5 & CSS Exercise</p>
                 <p>Holistee Manifesto created only by using HTML and CSS.</p>
               </div>
             </div>
@@ -72,10 +79,11 @@
         </section>
 
         <section id="about">
-          <h3>about me</h3>
+          <h3 class="heading">about me</h3>
             <div class="full-width">
               <div class="half-width">
-                <p>Hi, I'm Ania. <br>I'm a beginner web developer with a dream to become professional full stack developer one day. <br><br>Can't wait to work with you!</p>
+                <h4>Hi, I'm Ania. </h4>
+                <p>I'm a beginner web developer with a dream to become professional full stack developer one day. Beside my passion for coding I'm a huge Tomb Raider fangirl and a passionate cook.<br><br>Can't wait to work with you!</p>
               </div>
               <div class="half-width">
               </div>
@@ -83,7 +91,7 @@
         </section>
 
         <footer id="contact">
-          <h3>let's connect</h3>
+          <h3 class="heading">let's connect</h3>
               <div class="full-width">
                 <div class="third-width">
                   <h4>Hire me</h4>
@@ -92,9 +100,9 @@
                 <div class="third-width">
                   <h4>Follow me</h4>
                   <ul>
-                    <li><a href="https://twitter.com"></a><img src="img/twitter.png" alt="Twitter"></li>
-                    <li><a href="https://github.com/Ania-chan"></a><img src="img/github.png" alt="GitHub"></li>
-                    <li><a href="https://www.linkedin.com/in/anna-nakayama/"></a><img src="img/linkedin.png" alt="Linkedin"></li>
+                    <li id="twitter"><a href="https://twitter.com"></a><img src="img/twitter.png" alt="Twitter"></li>
+                    <li id="github"><a href="https://github.com/Ania-chan"></a><img src="img/github.png" alt="GitHub"></li>
+                    <li id="linkedin"><a href="https://www.linkedin.com/in/anna-nakayama/"></a><img src="img/linkedin.png" alt="Linkedin"></li>
                   </ul>
                 </div>
                 <div class="third-width">
@@ -102,7 +110,9 @@
                   <p>Tokyo<br>Let's go to meetups together!</p>
                 </div>
               </div>
-            <h5>Copyright 2018 | Anna Nakayama</h5>
+              <div id="footer">
+                <h5>Copyright 2018 | Anna Nakayama</h5>
+            </div>
         </footer>
 
       </main>

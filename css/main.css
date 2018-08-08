@@ -22,15 +22,13 @@
 /*** GRID ***/
 
 #portfolio {
-  height: 1545px;;
-}
-
-.project {
-  height: 466px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #about {
-  height: 550px;
   background: url('../img/about-me.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,17 +105,57 @@ h2 span {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
+  margin: 20px 0;
 }
 
 
 /*** PORTFOLIO ***/
-.heading {
+#portfolio .full-width {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+}
+
+#heading {
   font-weight: 400;
+  order: 1;
+}
+
+.half-width h4 {
+  margin: 10px 20px;
+}
+
+.half-width p {
+  margin: 10px 20px;
 }
 
 section {
   margin: 0 auto;
+}
+
+#rogue-pickings-img {
+  order: 2;
+}
+
+#rogue-pickings-txt {
+  order: 3;
+}
+
+#jubilee-img {
+  order: 4;
+}
+
+#jubilee-txt {
+  order: 5;
+}
+
+#holstee-img {
+  order: 6;
+}
+
+#holstee-txt {
+  order: 7;
 }
 
 /*** ABOUT ***/
@@ -134,6 +172,10 @@ section {
 #about p {
   color: #1f202b;
   padding: 10px 20px;
+}
+
+#about .half-width {
+  padding-bottom: 20px;
 }
 
 /*** CONTACT ***/
@@ -249,6 +291,14 @@ section {
 
 
   /*** PORTFOLIO ***/
+  #portfolio {
+    display: block;
+  }
+
+  #portfolio .full-width {
+    display: block;
+  }
+
   #portfolio, #contact {
     margin-left: 50px;
     margin-right: 50px;

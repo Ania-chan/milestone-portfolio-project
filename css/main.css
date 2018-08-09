@@ -11,32 +11,7 @@
    text-decoration: none;
  }
 
- h3 {
-   font-family: 'Source Code Pro', monospace;
-   color: #fa0075;
-   text-align: center;
-   font-weight: 200;
-   margin: 30px 0;
- }
-
 /*** GRID ***/
-
-#portfolio {
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#about {
-  background: url('../img/about-me.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#contact {
-  height: 450px;;
-}
 
 .full-width {
   width: 100%;
@@ -52,8 +27,9 @@
 }
 
 /*** HEADER ***/
-h3.header {
-  padding: 40px 0;
+
+.header h3 {
+  text-align: center;
 }
 
 #navigation {
@@ -71,6 +47,7 @@ nav ul li{
   font-size: 1.9em;
   font-weight: 300;
   width: 100%;
+  padding: 10px 0;
 }
 
 .half-width h3 {
@@ -78,8 +55,7 @@ nav ul li{
   font-family: 'Montserrat';
   color: #ffffff;
   font-weight: 300;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
 .hero-section {
@@ -94,7 +70,6 @@ h2 {
   font-family: 'Source Code Pro', monospace;
   font-size: 3em;
   font-weight: 400;
-  margin: 0;
   text-align: center;
 }
 
@@ -102,19 +77,26 @@ h2 span {
   color: #fa0075;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  margin: 20px 0;
+/*** PORTFOLIO ***/
+
+section {
+  margin: 0 auto;
 }
 
+h3.heading {
+  font-family: 'Source Code Pro', monospace;
+  color: #fa0075;
+  text-align: center;
+  font-weight: 200;
+  margin: 30px 0;
+}
 
-/*** PORTFOLIO ***/
 #portfolio .full-width {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 #heading {
@@ -130,8 +112,10 @@ img {
   margin: 10px 20px;
 }
 
-section {
-  margin: 0 auto;
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
 }
 
 #rogue-pickings-img {
@@ -156,9 +140,17 @@ section {
 
 #holstee-txt {
   order: 7;
+  margin-bottom: 20px;
 }
 
 /*** ABOUT ***/
+
+#about {
+  background: url('../img/about-me.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #about h3 {
   margin: 0 auto;
   padding: 20px 10px;
@@ -166,12 +158,12 @@ section {
 
 #about h4 {
   color: #1f202b;
-  padding: 10px 20px;
+  padding: 10px;
 }
 
 #about p {
   color: #1f202b;
-  padding: 10px 20px;
+  padding: 10px;
 }
 
 #about .half-width {
@@ -179,25 +171,29 @@ section {
 }
 
 /*** CONTACT ***/
+
 #contact {
+  height: 450px;
   margin: 0 auto;
 }
 
 .third-width {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .third-width ul {
   list-style: none;
+  margin: 0;
 }
 
 .third-width ul li {
   display: inline-block;
-  margin-right: 45px;
+  margin: 0 45px 0 0;
 }
 
 #footer {
+  padding-top: 10px;
   clear: both;
   text-align: center;
 }
@@ -207,14 +203,13 @@ section {
   padding-bottom: 20px;
 }
 
-@media only screen and (min-width: 940px) {
+@media only screen and (min-width: 768px) {
   /*Desktop styles here*/
 
   /*** BASE STYLES ***/
    body {
      font-size: 24px;
    }
-
 
    h3 {
      font-size: 1.5em;
@@ -256,10 +251,6 @@ section {
 
   /*** HEADER ***/
 
-  #navigation {
-    overflow: auto;
-  }
-
   nav {
     float:right;
     margin: 24px 0 12px 0;
@@ -275,7 +266,7 @@ section {
   .half-width h3 {
     font-size: 1.25em;
     font-weight: 300;
-    margin-top: 54px;
+    margin-top: 50px;
   }
 
   .hero-section {
@@ -291,6 +282,7 @@ section {
 
 
   /*** PORTFOLIO ***/
+
   #portfolio {
     display: block;
   }
@@ -300,8 +292,7 @@ section {
   }
 
   #portfolio, #contact {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0 50px;
   }
 
   #portfolio h3 {
@@ -310,12 +301,15 @@ section {
   }
 
   #portfolio h4 {
-    margin: 0 0 -15px 0;
-    padding: 0 30px;
+    margin: 10px 0 -5px 0;
+    padding: 10px 30px;
+    text-align: left;
   }
 
   #portfolio p {
-    padding: 0 30px;
+    padding: 10px 30px;
+    text-align: left;
+    margin: 0;
   }
 
   #portfolio .half-width {
@@ -323,6 +317,7 @@ section {
   }
 
   /*** ABOUT ***/
+
   #about h3 {
     margin: 0 auto;
     padding-top: 45px;
@@ -337,12 +332,13 @@ section {
   }
 
   /*** CONTACT ***/
+
   #contact {
     margin: 45px 0 0 0;
   }
 
   #contact h3 {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
 
   .third-width {
@@ -365,7 +361,7 @@ section {
 
   #footer h5 {
     font-size: 0.75em;
-    padding-top: 140px;
+    padding-top: 40px;
     padding-bottom: 15px;
   }
 
